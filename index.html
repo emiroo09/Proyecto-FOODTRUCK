@@ -13,6 +13,8 @@
     <meta name="author" content="Emiliano Rodriguez">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CA+Guides&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 <title>CANGREBURGER | Alimentandote con una burger</title>
 <!-- El tag de tittle es para como quiero que se muestre en la web-->
@@ -22,7 +24,7 @@
 <!--ENCABEZADO - HEADER -->
 <header class="sitio-header">
 
-    <div class ="container header-">
+    <div class ="container header-inner">
         <a href="#inicio" class="logo">
             <span class="logo-icono">🍔</span>
             CANGREBURGER
@@ -48,7 +50,32 @@
         </ul>
 
     </nav>
+
+    <button id="menu-toggle" class="menu-toggle"
+    aria-label="Abrir menú" aria-expanded="false"
+    aria-controls="mobile-menu">☰</button>
     </div>
+
+    <nav id="mobile-menu" class="mobile-nav">
+      <ul>
+        <li>
+                <a href="#inicio">Inicio</a>
+            </li>
+
+            <li>
+                <a href="#servicios">Servicios</a>
+            </li>
+
+            <li>
+                <a href="#nosotros">About</a>
+            </li>
+
+            <li>
+                <a href="#contacto">Contacto</a>
+            </li>
+      </ul>
+     
+    </nav>
 
     </header>
 

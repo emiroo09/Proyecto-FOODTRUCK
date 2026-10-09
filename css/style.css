@@ -1,26 +1,39 @@
+/*RESET*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Desplazamiento suave del html*/
+
 html {
     scroll-behavior: smooth;
 }
 
+/*Configuraciones generales*/
+
 body {
     margin:0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:aqua;
-    background-color: rgb(28, 32, 43);
+    font-family:'Playwrite CA Guides', arial, sans-serif;
+    color:rgb(5, 4, 17);
+    background-color: rgb(120, 146, 215);
     overflow-x: hidden;
 }
 
+.playwrite-ca-guides-regular {
+  font-family: "Playwrite CA Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Contenedor principal */
 .container { width: min(1100px,
             calc(100% - 2rem)); 
             margin: 0 auto;
             }
 
+/*Configuraciones para el header-Encabezado*/
 .sitio-header {
     position: sticky;
     top: 0;
@@ -30,6 +43,7 @@ body {
     border-bottom: 1px solid var(--line);
 }
 
+/* Configuraciones internas del encabezado-header-inner*/
 .header-inner {
      display: flex;
     align-items: center;
@@ -41,10 +55,88 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: .6rem;
-    font-family: "Fraunces", serif;
+    gap: 0.6rem;
+    font-family: "Playwrite CA Guides", serif;
     font-weight: 700;
     font-size: 1.1rem;
     color: rgb(58, 138, 181);
+    text-decoration:none;
 }
 
+/* Listas*/
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Enlaces*/
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+/*Menu principal de navegacion*/
+.main-nav{
+    display:none;
+    align-items:center;
+    gap: 1.5rem;
+}
+
+/*Lista sea Horizontal*/
+.main-nav ul {
+    display:flex;
+    gap: 1.5rem;
+    align-item:center;
+}
+
+.main-nav a{
+    font-weight: 600;
+    transition: color .2s ease;
+}
+
+.main-nav a:hover{
+    color: #3352ff;
+}
+
+.menu-toggle {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgb(134, 209, 234);
+  background: #fff;
+  color: #790086;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  max-height: 0;
+  overflow: hidden;
+  border-top: 1px solid #3352ff;
+  background: white;
+  transition: max-height .28s ease;
+}
+.mobile-nav.open { max-height: 360px; }
+.mobile-nav ul { 
+    display: flex; 
+    flex-direction: column; 
+    gap: .3rem; 
+    padding: 1rem 1.25rem; }
+.mobile-nav li a { 
+    display: block; 
+    padding: .7rem .5rem; 
+    border-radius: .6rem; 
+    font-weight: 600; 
+}
+
+
+
+@media (min-width: 768px) {
+  .main-nav { 
+    display: flex; 
+}
+  .menu-toggle, .mobile-nav { display: none; }
+}
