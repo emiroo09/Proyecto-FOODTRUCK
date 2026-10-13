@@ -53,11 +53,16 @@
 
     </nav>
 
-    <button id="menu-toggle" class="menu-toggle"
-    aria-label="Abrir menú" aria-expanded="false"
-    aria-controls="mobile-menu">☰</button>
-    </div>
 
+    <!-- Boton menu Movil-->
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+
+
+    <!-- Navegacion Movil-->
     <nav id="mobile-menu" class="mobile-nav">
       <ul>
         <li>
@@ -81,38 +86,123 @@
 
     </header>
 
+    <!-- INCIO MAIN (PRINCIPAL) del desarrollo web-->
+
     <main>
          <!-- SECCION CARRUSEL-->
 
-    <section id="carrusel" class="carousel-section container">
-        <h2>FAST FOOD</h2>
+    <section id="Inicio" class="hero-section"> 
         <div class="carousel-track" id="carouseltrackebc">
         <!--Primera imagen hero-->
             <div class="carousel-slide">
                 <img src="img/hero1.jpg" alt="imagen CANGREBURGER hero1">
+
+                <div class="slide-overlay">
+                        <span class="badge">Espacios Personalizados</span>
+                        <h1>Jardin <span class="highlight-yellow">En Tu Casa</span></h1>
+                        <p>Transformamos tu espacio en una experiencia al exterior mas comoda.</p>
+                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+                    </div>
             </div>
         <!--Segunda imagen hero-->
             <div class="carousel-slide">
                 <img src="img/hero2.jpg" alt="imagen CANGREBURGER hero2">
+
+                <div class="slide-overlay">
+                        <span class="badge">Comida Premium</span>
+                        <h1>Comida<span class="highlight-yellow">Hasta tu casa/span></h1>
+                        <p>Transformamos tu espacio en una experiencia de comida rapida.</p>
+                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+                    </div>
             </div>
         <!--Tercera imagen hero-->
             <div class="carousel-slide">
                 <img src="img/hero3.jpg" alt="imagen CANGREBURGER hero3">
+
+                <div class="slide-overlay">
+                        <span class="badge">Menu Especial</span>
+                        <h1>Carrito <span class="highlight-yellow">Parque</span></h1>
+                        <p>Local comercial donde disfrutaras de nuestros mejores platillos.</p>
+                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+                    </div>
             </div>
 
 
 
             </div>
 
-        </div>
+        
+             <!-- Botones de Navegación del Carrusel -->
+            <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
 
+            <!-- Puntos Indicadores -->
+            <div class="carousel-dots" id="carousel-dots">
+                <button class="dot active" aria-label="Ir a diapositiva 1"></button>
+                <button class="dot" aria-label="Ir a diapositiva 2"></button>
+                <button class="dot" aria-label="Ir a diapositiva 3"></button>
+            </div>
     </section>
 
+             <!-- SECCIÓN DE SERVICIOS -->
+        <section id="servicios" class="servicios-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>NUESTROS SERVICIOS</h2>
+                    <h3>Soluciones de Entretenimiento en Casa</h3>
+                </div>
+            <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-couch"></i></div>
+                        <h4>Diseño de Espacios</h4>
+                        <p>Asesoramiento integral para adaptar cualquier sala o habitación en un espacio cinematográfico cómodo y funcional.</p>
+                    </div>
+             <div class="card">
+                        <div class="card-icon red"><i class="fa-solid fa-volume-high"></i></div>
+                        <h4>Acústica Profesional</h4>
+                        <p>Tratamiento de audio e instalación de altavoces envolventes para una inmersión acústica completa.</p>
+                    </div>
+            <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-microchip"></i></div>
+                        <h4>Domótica e IA</h4>
+                        <p>Controla la iluminación, persianas, proyector y sonido desde tu smartphone o con comandos de voz.</p>
+                    </div>
+            </div>
+        </div>
+        </section>
 
-<p>This is a paragraph.</p>
+         <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container nosotros-inner">
+                <div class="nosotros-img">
+                    <img src="img/hero2.jpg" alt="Experiencia cine en familia">
+                </div>
+                <div class="nosotros-info">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <h3>Apasionados por el gastronomia y cultura.</h3>
+                    <p>En <strong>CANGREBURGER</strong>, bajo la dirección del Lic Emiliano, gastronomia mexicana, venta a domicilio y eventos privados.</p>
+                    <p>Brindamos consultoría y soluciones a la medida de tu hogar para garantizar momentos inolvidables en familia.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="stat-num yellow">+150</span>
+                            <span class="stat-lbl">Proyectos</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num red">100%</span>
+                            <span class="stat-lbl">Satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
+    <!-- FOOTER-->
 <footer>
   <div class="footer-social">
     <div class="container social-icons">
@@ -142,6 +232,7 @@
 
 </footer>
 
+<!-- Archivo de Javascript Externo -->
 <script src="js/script.js"></script>
 
 
